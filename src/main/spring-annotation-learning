@@ -1,0 +1,46 @@
+@ConfigurationProperties
+Bind properties in application.properties or yaml file with the object or attributes in the class
+
+@EnableConfigurationProperties
+Enable support for ConfigurationProperties annotated beans.
+
+@PostConstruct
+@Repository
+@Value
+
+Spring lifecycle
+
+Video 11th - Code completion using github Oauth
+https://www.youtube.com/watch?v=nwyf_4aSkqM&list=RDCMUCYt1sfh5464XaDBH0oH_o7Q&index=3
+
+5. Spring book Security by default lands to login page
+https://stackoverflow.com/questions/46265775/spring-boot-project-shows-the-login-page
+Use above to disable or remove dependency
+
+1.
+https://www.youtube.com/watch?v=nwyf_4aSkqM&list=RDCMUCYt1sfh5464XaDBH0oH_o7Q&index=3
+https://github.com/koushikkothagal/spring-github-login-starter
+2.
+https://www.youtube.com/watch?v=NEZGCpN1J6M
+3.
+https://github.com/koushikkothagal/betterreads-webapp/tree/master/src/main/resources/templates
+
+15 - https://www.youtube.com/watch?v=ZIGImCqRr1I&t=2s
+16 -
+
+Summary 1
+1. Till now we've implemented
+    a) SearchController - search any query with "/search" and share result on "searchResults"
+    b) Loop over searchResults on html and display. Submit "View Book" button which hit to BC and return book page
+    c) Every page is having Search bar on top of the page which hit to SearchController and get result
+    d) BookController - search any book with "/books/{bookId}" and show full book information on page
+
+2. To track user with Book, we would be using userBook table
+   a) User can search a book, select on a book and start reading a book
+   b) If user is login, there is a form which user can submit and that will call UserActivityController to persist user
+   state
+
+Additional Mandatory AIs
+a) Add logout button
+b) Deploy in AWS
+c) Edit button

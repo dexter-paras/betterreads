@@ -1,0 +1,36 @@
+datadump.location:
+  author: /Users/parchawl/Personal_Repo/betterreads/src/main/resources/test-authors.txt
+  work: /Users/parchawl/Personal_Repo/betterreads/src/main/resources/test-works.txt
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Iv1.d360a74eb4cc4f39
+            client-secret: 9b0350083f7951bf55c6cdac95e5e96cc4f4d417
+
+  application:
+    name: betterreads
+
+  data:
+    cassandra:
+      keyspace-name: main
+      username: sAEMeZMSpyeZYLZjfiZQShhe
+      password: 1IkGhC4I1DQ+YrKXNU-PIxCc0Ocgj,IsAR+XCm-+0ReDZGv76q6DWMjCf+-Q_YWZl7wEcqB06TKJNcnK,7rHpqIYzoHn9IK.9ElcoXUuoM9wUe0aoxl+QgUL4pPFUa,G
+      schema-action: create_if_not_exists
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+
+datastax.astra:
+  secure-connect-bundle: ../secure-connect.zip
+
+astra.db:
+  id: d75f0ad2-ccbc-48db-9d6a-f7bb78f82abd
+  region: asia-south1
+  keyspace: main
+  application.token: AstraCS:sAEMeZMSpyeZYLZjfiZQShhe:04f603f718ec244bebd0097a74ab0fe37ae5a596235bb79c455dcea931e91234
